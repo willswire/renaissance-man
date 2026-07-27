@@ -1,0 +1,12 @@
+{
+  "name": "renaissance-man",
+  "version": "0.1.0",
+  "description": "A worldview for the imago ex machina",
+  "author": {
+    "name": "William Walker",
+    "email": "w_walker@icloud.com",
+    "url": "https://github.com/willswire"
+  },
+  "repository": "https://github.com/willswire/renaissance-man",
+  "license": "Apache-2.0"
+}
