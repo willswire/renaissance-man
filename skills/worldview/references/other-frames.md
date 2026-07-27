@@ -67,6 +67,7 @@ A caution that follows from both: the frames catalogued below are *ideal types*.
 *Anthropology:* Whatever the sciences say, and nothing further.
 *Strongest form:* Ruthless clarity about evidence; a real check on hand-waving.
 *Engagement:* The verification principle is famously self-refuting — it is not itself empirically verifiable — and strict positivism collapsed for that reason. But it persists as an instinct rather than a doctrine: the reflex that quantified claims are serious and unquantified ones are soft. Blind spot — it cannot see that the choice of what to measure is itself a value judgment made before any measuring starts.
+
 ### Transhumanism
 *Core:* Human limits — cognitive, physical, mortal — are problems technology should solve.
 *Anthropology:* Human nature is raw material; the self is essentially informational.

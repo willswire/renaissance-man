@@ -42,7 +42,14 @@ skills/
 
 ## Installation
 
-Clone the repository and load it with the `--plugin-dir` flag:
+Add the [willswire marketplace](https://github.com/willswire/claude-marketplace) and install the plugin from inside Claude Code:
+
+```
+/plugin marketplace add willswire/claude-plugins
+/plugin install renaissance-man@willswire
+```
+
+Or, for local development, clone the repository and load it with the `--plugin-dir` flag:
 
 ```bash
 git clone https://github.com/willswire/renaissance-man.git
