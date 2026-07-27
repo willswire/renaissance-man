@@ -42,7 +42,7 @@ skills/
 
 ## Installation
 
-Add the [willswire marketplace](https://github.com/willswire/claude-marketplace) and install the plugin from inside Claude Code:
+Add the [willswire marketplace](https://github.com/willswire/claude-plugins) and install the plugin from inside Claude Code:
 
 ```
 /plugin marketplace add willswire/claude-plugins
