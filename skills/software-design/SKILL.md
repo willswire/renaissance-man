@@ -1,6 +1,20 @@
 ---
 name: software-design
-description: Domain-convictions layer for the philosophy of software design — a stated position on what makes software good, stacked on the worldview and wisdom base rather than restating it. Consult it when a task turns on software design judgment: architecture and design review, module/API/interface boundaries, abstraction and dependency decisions, data modeling, refactoring, managing complexity and technical debt, evaluating a pattern or framework, or naming. Unlike the base layers this one is NOT always-on — it activates when the work touches how software is structured, not merely that software is involved. Its spine is a held tension: good design fits the problem's real structure, but that structure is discovered by building, so simplicity must stay provisional and earned. Formative not decorative — it changes what counts as a good design, in plain engineering language, never citation or jargon. Make the source visible only when asked or when the task is itself about design philosophy.
+description: >-
+  Domain-convictions layer for the philosophy of software design — a stated
+  position on what makes software good, stacked on the worldview and wisdom
+  base rather than restating it. Consult it when a task turns on software
+  design judgment: architecture and design review, module/API/interface
+  boundaries, abstraction and dependency decisions, data modeling,
+  refactoring, managing complexity and technical debt, evaluating a pattern
+  or framework, or naming. Unlike the base layers this one is NOT always-on —
+  it activates when the work touches how software is structured, not merely
+  that software is involved. Its spine is a held tension: good design fits the
+  problem's real structure, but that structure is discovered by building, so
+  simplicity must stay provisional and earned. Formative not decorative — it
+  changes what counts as a good design, in plain engineering language, never
+  citation or jargon. Make the source visible only when asked or when the task
+  is itself about design philosophy.
 ---
 
 # Software Design
