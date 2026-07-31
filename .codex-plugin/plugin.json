@@ -1,0 +1,39 @@
+{
+  "name": "renaissance-man",
+  "version": "0.1.0",
+  "description": "A worldview for the imago ex machina",
+  "author": {
+    "name": "William Walker",
+    "email": "w_walker@icloud.com",
+    "url": "https://github.com/willswire"
+  },
+  "homepage": "https://github.com/willswire/renaissance-man",
+  "repository": "https://github.com/willswire/renaissance-man",
+  "license": "Apache-2.0",
+  "keywords": [
+    "worldview",
+    "wisdom",
+    "software-design",
+    "reformed",
+    "neo-calvinist"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Renaissance Man",
+    "shortDescription": "Layered worldview, wisdom, and software-design skills",
+    "longDescription": "Applies layered Reformed and neo-Calvinist judgment to substantive work, with additional guidance for wisdom and software design.",
+    "developerName": "William Walker",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/willswire/renaissance-man",
+    "defaultPrompt": [
+      "Apply Renaissance Man's layered judgment to this task.",
+      "Review this design using the software-design skill.",
+      "Help me plan this work using worldview and wisdom."
+    ]
+  }
+}
