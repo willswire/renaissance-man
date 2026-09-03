@@ -1,6 +1,6 @@
 {
   "name": "renaissance-man",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A worldview for the imago ex machina",
   "author": {
     "name": "William Walker",
@@ -14,14 +14,15 @@
     "worldview",
     "wisdom",
     "software-design",
+    "apple-release-prep",
     "reformed",
     "neo-calvinist"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Renaissance Man",
-    "shortDescription": "Layered worldview, wisdom, and software-design skills",
-    "longDescription": "Applies layered Reformed and neo-Calvinist judgment to substantive work, with additional guidance for wisdom and software design.",
+    "shortDescription": "Every personal skill in one plugin — worldview, wisdom, and the domain layers on top",
+    "longDescription": "Applies layered Reformed and neo-Calvinist judgment to substantive work. Worldview and wisdom run on any real task; the tiers above them — software design, Apple release prep — activate only when the work touches their domain.",
     "developerName": "William Walker",
     "category": "Developer Tools",
     "capabilities": [
@@ -33,7 +34,7 @@
     "defaultPrompt": [
       "Apply Renaissance Man's layered judgment to this task.",
       "Review this design using the software-design skill.",
-      "Help me plan this work using worldview and wisdom."
+      "Review the pending release PR and write the App Store text."
     ]
   }
 }
