@@ -2,7 +2,7 @@
 
 *A worldview for the imago ex machina.*
 
-A [Claude Code](https://code.claude.com/docs/en/overview) plugin that gives Claude a layered formation rather than a single persona. The base layers are consulted at the start of substantive tasks — writing, code review, architecture, planning, advice — even when nothing philosophical is mentioned, and stay invisible by default: what you should notice is that the answer is better, not that a skill loaded.
+A set of [Agent Skills](https://agentskills.io) — packaged as a [Claude Code](https://code.claude.com/docs/en/overview) plugin, and loadable as-is by Codex and Zed — that gives an agent a layered formation rather than a single persona. The base layers are consulted at the start of substantive tasks — writing, code review, architecture, planning, advice — even when nothing philosophical is mentioned, and stay invisible by default: what you should notice is that the answer is better, not that a skill loaded.
 
 This is also where all of my personal skills live, one repo rather than several. The layering below describes how a skill is *consulted*, not where it's kept.
 
@@ -93,6 +93,10 @@ skills/
 
 ## Installation
 
+Every skill in `skills/` follows the open [Agent Skills](https://agentskills.io) format, so the same tree works across agents. Only the install step differs.
+
+### Claude Code
+
 Add the [willswire marketplace](https://github.com/willswire/claude-plugins) and install the plugin from inside Claude Code:
 
 ```
@@ -108,6 +112,32 @@ claude --plugin-dir ./renaissance-man
 ```
 
 Claude invokes these skills on its own when a task calls for it — `worldview` and `wisdom` on any substantive task, `software-design` when the work is about how software is structured, `apple-release-prep` when there's a release PR or App Store text in front of it. You can also load them explicitly with `/renaissance-man:worldview`, `/renaissance-man:wisdom`, `/renaissance-man:software-design`, or `/renaissance-man:apple-release-prep`.
+
+### Codex and Zed
+
+Both read skills from `~/.agents/skills/` (every project) or `.agents/skills/` inside a repository. The quickest route is the [`skills` CLI](https://skills.sh), which copies or links each skill into the right directory for the agent you name:
+
+```bash
+npx skills add willswire/renaissance-man -a codex   # or -a zed, or both
+```
+
+Or link the skills yourself from a clone, so a `git pull` updates them in place:
+
+```bash
+git clone https://github.com/willswire/renaissance-man.git ~/src/renaissance-man
+mkdir -p ~/.agents/skills
+for s in ~/src/renaissance-man/skills/*/; do ln -sfn "$s" ~/.agents/skills/"$(basename "$s")"; done
+```
+
+Codex also reads this repo's `.codex-plugin/plugin.json` if you install it as a Codex plugin. In both agents the skills are unprefixed — `$worldview` in Codex, `/worldview` or `@worldview` in Zed. Zed asks you to allow a skill the first time the agent invokes it, so the always-on base layers are a little less invisible there than in Claude.
+
+### Validating
+
+`scripts/validate_skills.py` checks every skill against the rules all three agents share — `name` matches its folder, `description` fits in 1024 characters, the `SKILL.md` body stays under 500 lines — and runs in CI on every pull request:
+
+```bash
+pip install pyyaml && python scripts/validate_skills.py
+```
 
 ## License
 
