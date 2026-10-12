@@ -1,3 +1,6 @@
+> [!WARNING]
+> **This project is archived.** My skills now live in [willswire/skills](https://github.com/willswire/skills), a human-maintained repo. This repo is read-only and won't receive updates. Please use the new one instead.
+
 # renaissance-man
 
 *A worldview for the imago ex machina.*
